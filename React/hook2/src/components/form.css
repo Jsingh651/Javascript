@@ -1,0 +1,28 @@
+*{
+    background-color: black;
+    color: white;
+}
+
+.formRoute{
+    margin-top: 100px;
+    justify-content: space-around;
+    text-align: left;
+    width: 300px;
+    margin-left: 300px;
+}
+
+input{
+    display: flex;
+    width: 180px;
+    height: 30px;
+    border-radius: 2px;
+    border: 2px solid white;
+    margin-bottom: 12px;
+    margin-top: 4px;
+}
+
+.userinfo{
+    text-align: left;
+    margin-left: 800px;
+    margin-bottom: 1000px;
+}

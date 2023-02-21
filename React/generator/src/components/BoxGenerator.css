@@ -1,0 +1,11 @@
+.newDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.box{
+    margin: 0 auto;
+    margin: 12px;
+}
