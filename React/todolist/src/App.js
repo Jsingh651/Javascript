@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 function App() {
   const [newTodo, setTodo] = useState("");
   const [todos, setTodos] = useState([]);
-  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (newTodo.length === 0) {
@@ -47,5 +46,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
