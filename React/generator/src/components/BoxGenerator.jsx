@@ -12,11 +12,11 @@ const BoxGenerator = () => {
     };
 
     return (
-        <>
+        <h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="color-input">Color:</label>
                 <input
-                    type="text"
+                    type="color"
                     value={color}
                     onChange={(e) => setColor(e.target.value)} />
                     {console.log(color)}
@@ -31,7 +31,7 @@ const BoxGenerator = () => {
                     <div className='box' key={index} style={{ backgroundColor: box.color, height: 100, width: 100 }} />
                 ))}
             </div>
-        </>
+        </h1>
     );
 };
 
