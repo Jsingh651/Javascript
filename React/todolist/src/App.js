@@ -12,20 +12,17 @@ function App() {
     setTodos([...todos, { text: newTodo, checked: false }]);
     setTodo("");
   }
-
   const handleDelete = (idx) => {
     const newFilteredList = todos.filter((todo, i) => {
       return i !== idx;
     })
     setTodos(newFilteredList);
   }
-
   const handleCheck = (idx) => {
     const newTodos = [...todos];
     newTodos[idx] = { ...newTodos[idx], checked: !newTodos[idx].checked };
     setTodos(newTodos);
   }
-
   return (
     <div className="App">
       <form onSubmit={handleSubmit}>
