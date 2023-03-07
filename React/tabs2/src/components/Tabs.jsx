@@ -1,19 +1,9 @@
 import React from 'react';
 import '../App.css';
-const Tabs = (props) => {
-    const { tablist, tabIndex, setTabIndex } = props;
-    
-
+const Tabs = () => {
     return (
-        <div style={{ margin: "auto", width: "85%", textAlign: "left" }}>
+        <div>
 
-            {
-                tablist.map((item, index) => (
-                    <div onClick={(e) => setTabIndex(index)}>
-                        {item.label}
-                    </div>
-                ))
-            }
         </div>
     )
 }

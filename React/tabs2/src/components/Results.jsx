@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Results = (props) => {
-    const {tablist, tabIndex} = props;
+const Results = () => {
+    
   return (
-    <div>
-    { tablist[tabIndex].content}
-    </div>
+    
   )
 }
 
