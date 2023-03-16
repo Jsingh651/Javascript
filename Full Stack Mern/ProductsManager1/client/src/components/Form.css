@@ -48,3 +48,11 @@ form{
 .form{
     margin: 0 auto;
 }
+
+.line{
+    width: 80%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: white;
+    margin-top: 40px;
+}
