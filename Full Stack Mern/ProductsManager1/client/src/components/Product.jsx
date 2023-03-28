@@ -14,6 +14,14 @@ const Product = (props) => {
                 console.log(err);
             });
     }, []);
+    const deleteItem = (id) => {
+        axios.delete(`http://localhost:8000/api/product/delete/${id}`)
+            .then(res => {
+                const filterdItems = items.filter(items => items._id !== id);
+                setItems(filterdItems);
+            })
+            .catch(err => console.log(err));
+    };
     return (
 
         <div>
@@ -22,7 +30,12 @@ const Product = (props) => {
                 items.map((item, index) => {
                     return(
                         <h3 key={index}>
+                        <div className="linked">
                         <Link to={`/api/product/${item._id}`}> {item.title}'s Page! </Link>
+                        <td><a href={`/product/edit/${item._id}`}>Edit</a></td>
+                        <button onClick={(e) => deleteItem(item._id)} className='bttn'>Delete</button>
+                        </div>
+
                         </h3>
                     )
                 })
